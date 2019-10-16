@@ -66,9 +66,17 @@ import RadioButton from "react-native-animated-radio-button";
 | outerColor   |  color   | dodgerblue | change the radio button's outer circle color    |
 | onPress      | function |     ()     | set your own function when onPress is triggered |
 
+
+## Credits
+
+This library is heavily inspired on [react-native-radio-button](https://github.com/mmazzarolo/react-native-radio-button)
+It is re-written with a modern way. Also it has **built-in selection system**.
+The library itself also has a bouncy animation when onPress is triggered.
+
 ## Future Plans
 
 - [x] ~~LICENSE~~
+- [ ] Left, right, bottom text component as optional
 - [ ] Write an article about the lib on Medium
 
 
