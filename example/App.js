@@ -4,10 +4,13 @@ import RadioButton from "./lib/src/RadioButton";
 
 const App = () => {
   return (
-    <View>
+    <View style={{ flex: 1 }}>
       <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
+      <SafeAreaView
+        style={{ flex: 1, alignItems: "center", justifyContent: "center" }}
+      >
         <RadioButton
+          size={50}
           isSelected
           animation={"bounceIn"}
           onPress={() => console.log("RadioButton is pressed")}

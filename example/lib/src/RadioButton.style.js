@@ -18,6 +18,10 @@ export const outerStyle = (size, outerColor) => ({
   borderWidth: size * DEFAULT_OUTER_BORDER_WIDTH_MULTIPLIER
 });
 
+export const transformStyle = springValue => ({
+  transform: [{ scale: springValue }]
+});
+
 export default {
   center: {
     alignSelf: "center",

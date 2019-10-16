@@ -1,44 +1,72 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import { TouchableOpacity } from "react-native";
+import { Animated, Easing, TouchableOpacity } from "react-native";
 import { View } from "react-native-animatable";
-import styles, { innerStyle, outerStyle } from "./RadioButton.style";
+import styles, {
+  innerStyle,
+  outerStyle,
+  transformStyle
+} from "./RadioButton.style";
 
 const RadioButton = props => {
-  const { size, innerColor, outerColor, isSelected, onPress } = props;
+  const {
+    size,
+    innerColor,
+    outerColor,
+    isSelected,
+    onPress,
+    isBouncable
+  } = props;
   const [_isSelected, setSelected] = useState(isSelected);
+  const [springValue, setSpringValue] = useState(new Animated.Value(1));
 
   handleOnPress = () => {
     setSelected(!_isSelected);
+    if (isBouncable) spring(Easing.bounce);
     if (onPress) onPress();
   };
 
+  spring = () => {
+    springValue.setValue(0.7);
+    Animated.spring(springValue, {
+      toValue: 1,
+      friction: 5
+    }).start();
+  };
+
   return (
-    <TouchableOpacity
-      style={[styles.center, outerStyle(size, outerColor)]}
-      onPress={handleOnPress}
-    >
-      {_isSelected ? (
-        <View style={innerStyle(size, innerColor)} {...props} />
-      ) : null}
+    <TouchableOpacity onPress={handleOnPress}>
+      <Animated.View
+        style={[
+          outerStyle(size, outerColor),
+          transformStyle(springValue),
+          styles.center
+        ]}
+      >
+        {_isSelected ? (
+          <View style={innerStyle(size, innerColor)} {...props} />
+        ) : null}
+      </Animated.View>
     </TouchableOpacity>
   );
 };
 
 RadioButton.propTypes = {
   size: PropTypes.number,
-  innerColor: PropTypes.string,
-  outerColor: PropTypes.string,
+  onPress: PropTypes.func,
   isSelected: PropTypes.bool,
-  onPress: PropTypes.func
+  isBouncable: PropTypes.bool,
+  innerColor: PropTypes.string,
+  outerColor: PropTypes.string
 };
 
 RadioButton.defaultProps = {
   size: 16,
-  innerColor: "dodgerblue",
-  outerColor: "dodgerblue",
   isSelected: false,
-  onPress: () => null
+  isBouncable: true,
+  onPress: () => null,
+  innerColor: "dodgerblue",
+  outerColor: "dodgerblue"
 };
 
 export default RadioButton;
