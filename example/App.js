@@ -24,7 +24,7 @@ const App = () => {
 
         <View style={{ marginTop: 16 }}>
           <RadioButton
-            size={50}
+            size={35}
             isSelected={false}
             isBounceable={false}
             animation={"bounceIn"}
@@ -33,7 +33,7 @@ const App = () => {
         </View>
         <View style={{ marginTop: 16 }}>
           <RadioButton
-            size={50}
+            size={25}
             isSelected
             innerColor="#9e29d9"
             outerColor="#6a29d9"
