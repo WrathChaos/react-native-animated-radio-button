@@ -1,20 +1,20 @@
-<img alt="React Native Library Boilerplate" src="assets/logo.png" width="1050"/>
+<img alt="React Native Animated Radio Button" src="assets/logo.png" width="1050"/>
 
 
-[![Battle Tested ✅](https://img.shields.io/badge/-Battle--Tested%20%E2%9C%85-03666e?style=for-the-badge)](https://github.com/WrathChaos/react-native-library-boilerplate)
+[![Battle Tested ✅](https://img.shields.io/badge/-Battle--Tested%20%E2%9C%85-03666e?style=for-the-badge)](https://github.com/WrathChaos/react-native-animated-radio-button)
 
 
-[![React Native Library Boiler Plate](https://img.shields.io/badge/-React%20Native%20Library%20Boilerplate-lightgrey?style=for-the-badge)](https://github.com/WrathChaos/react-native-library-boilerplate)
+[![Fully customizable animated radio button for React Native](https://img.shields.io/badge/-Fully%20customizable%20animated%20radio%20button%20for%20React%20Native-lightgrey?style=for-the-badge)](https://github.com/WrathChaos/react-native-animated-radio-button)
 
 
-[![npm version](https://img.shields.io/npm/v/react-native-library-boilerplate.svg?style=for-the-badge)](https://www.npmjs.com/package/react-native-library-boilerplate)
-[![npm](https://img.shields.io/npm/dt/react-native-library-boilerplate.svg?style=for-the-badge)](https://www.npmjs.com/package/react-native-library-boilerplate)
+[![npm version](https://img.shields.io/npm/v/react-native-animated-radio-button.svg?style=for-the-badge)](https://www.npmjs.com/package/react-native-animated-radio-button)
+[![npm](https://img.shields.io/npm/dt/react-native-animated-radio-button.svg?style=for-the-badge)](https://www.npmjs.com/package/react-native-animated-radio-button)
 ![Platform - Android and iOS](https://img.shields.io/badge/platform-Android%20%7C%20iOS-blue.svg?style=for-the-badge)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=for-the-badge)](https://github.com/prettier/prettier)
 
 <p align="center">
-  <img alt="React Native Library Boilerplate"
+  <img alt="React Native Animated Radio Button"
         src="assets/Screenshots/JSLibraryBoilerplate.png" />
 </p>
 
@@ -23,7 +23,7 @@
 Add the dependency:
 
 ```ruby
-npm i react-native-library-boilerplate
+npm i react-native-animated-radio-button
 ```
 
 ## Peer Dependencies
@@ -33,6 +33,7 @@ npm i react-native-library-boilerplate
 ```js
 "react": ">= 16.x.x",
 "react-native": ">= 0.55.x",
+"react-native-animatable": ">= 1.3.3"
 ```
 
 # Usage
@@ -40,32 +41,36 @@ npm i react-native-library-boilerplate
 ## Import
 
 ```js
-import { Component1, Component2 } from "react-native-library-boilerplate";
+import RadioButton from "react-native-animated-radio-button";
 ```
 
-## Component1 Usage
+## Usage
 
 ```js
-<Component1 />
+<RadioButton
+  size={50}
+  isSelected
+  animation={"bounceIn"}
+  onPress={() => console.log("RadioButton is pressed")}
+/>
 ```
 
 # Configuration - Props
 
-| Property |  Type   | Default | Description                                             |
-| -------- | :-----: | :-----: | ------------------------------------------------------- |
-| outline  | boolean |  true   | make the button outline                                 |
-| solid    | boolean |  false  | make the button with a solid background and a shadow    |
-| gradient | boolean |  false  | make the button with a gradient background and a shadow |
-| width    | number  |   150   | change the button's width                               |
+| Property     |   Type   |  Default   | Description                                     |
+| ------------ | :------: | :--------: | ----------------------------------------------- |
+| size         |  number  |     16     | change the size of the radio button             |
+| isSelected   | boolean  |   false    | set the selectable of the radio button          |
+| isBounceable | boolean  |    true    | enable or disable the bounceable effect         |
+| innerColor   |  color   | dodgerblue | change the radio button's inner circle color    |
+| outerColor   |  color   | dodgerblue | change the radio button's outer circle color    |
+| onPress      | function |     ()     | set your own function when onPress is triggered |
 
 ## Future Plans
 
 - [x] ~~LICENSE~~
 - [ ] Write an article about the lib on Medium
 
-# Change Log
-
-Change log will be here !
 
 ## Author
 
@@ -73,4 +78,4 @@ FreakyCoder, kurayogun@gmail.com
 
 ## License
 
-React Native Library Boilerplate is available under the MIT license. See the LICENSE file for more info.
+React Native Animated Radio Button is available under the MIT license. See the LICENSE file for more info.
