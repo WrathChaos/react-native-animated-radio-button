@@ -71,7 +71,7 @@ You can check the example out 😏
 
 ## Credits
 
-This library is heavily inspired on [react-native-radio-button](https://github.com/mmazzarolo/react-native-radio-button)
+This library is heavily inspired on **[react-native-radio-button](https://github.com/mmazzarolo/react-native-radio-button)**
 It is re-written with a modern way. Also it has **built-in selection system**.
 The library itself also has a bouncy animation when onPress is triggered.
 
