@@ -16,6 +16,8 @@ const App = () => {
         <RadioButton
           size={50}
           isSelected
+          innerColor="#e82020"
+          outerColor="#e82020"
           animation={"bounceIn"}
           onPress={() => console.log("RadioButton is pressed")}
         />
@@ -24,6 +26,7 @@ const App = () => {
           <RadioButton
             size={50}
             isSelected={false}
+            isBounceable={false}
             animation={"bounceIn"}
             onPress={() => console.log("RadioButton is pressed")}
           />
@@ -32,6 +35,8 @@ const App = () => {
           <RadioButton
             size={50}
             isSelected
+            innerColor="#9e29d9"
+            outerColor="#6a29d9"
             animation={"bounceIn"}
             onPress={() => console.log("RadioButton is pressed")}
           />
