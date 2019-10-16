@@ -1,24 +1,16 @@
 import React from "react";
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar
-} from "react-native";
+import { View, StatusBar, SafeAreaView } from "react-native";
 import RadioButton from "./lib/src/RadioButton";
 
 const App = () => {
-  let isSelected = false;
   return (
     <View>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
         <RadioButton
+          isSelected
           animation={"bounceIn"}
-          isSelected={isSelected}
-          onPress={() => (isSelected = !isSelected)}
+          onPress={() => console.log("RadioButton is pressed")}
         />
       </SafeAreaView>
     </View>

@@ -17,3 +17,11 @@ export const outerStyle = (size, outerColor) => ({
   borderRadius: (size + size * DEFAULT_SIZE_MULTIPLIER) / 2,
   borderWidth: size * DEFAULT_OUTER_BORDER_WIDTH_MULTIPLIER
 });
+
+export default {
+  center: {
+    alignSelf: "center",
+    alignItems: "center",
+    justifyContent: "center"
+  }
+};

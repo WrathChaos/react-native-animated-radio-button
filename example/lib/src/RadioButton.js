@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { TouchableOpacity } from "react-native";
 import { View } from "react-native-animatable";
-import { innerStyle, outerStyle } from "./RadioButton.style";
+import styles, { innerStyle, outerStyle } from "./RadioButton.style";
 
 const RadioButton = props => {
   const { size, innerColor, outerColor, isSelected, onPress } = props;
@@ -15,10 +15,7 @@ const RadioButton = props => {
 
   return (
     <TouchableOpacity
-      style={[
-        { justifyContent: "center", alignItems: "center", alignSelf: "center" },
-        outerStyle(size, outerColor)
-      ]}
+      style={[styles.center, outerStyle(size, outerColor)]}
       onPress={handleOnPress}
     >
       {_isSelected ? (
