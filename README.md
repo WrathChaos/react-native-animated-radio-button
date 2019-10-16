@@ -46,6 +46,8 @@ import RadioButton from "react-native-animated-radio-button";
 
 ## Usage
 
+You can check the example out 😏
+
 ```js
 <RadioButton
   size={50}
