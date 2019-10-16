@@ -1,8 +1,15 @@
 {
-  "name": "react-native-library-boilerplate",
-  "version": "0.0.2",
-  "description": "Description for library",
+  "name": "react-native-animated-radio-button",
+  "version": "0.0.1",
+  "description": "Fully customizable animated radio button for React Native",
   "keywords": [
+    "bouncy",
+    "animated",
+    "radio",
+    "button",
+    "radio-button",
+    "animated-radio-button",
+    "customizable",
     "FreakyCoder",
     "freakycoder",
     "kuray",
@@ -14,9 +21,9 @@
     "rn"
   ],
   "homepage": "https://www.freakycoder.com",
-  "bugs": "https://github.com/WrathChaos/react-native-library-boilerplate/issues",
-  "main": "./lib/src/index.js",
-  "repository": "git@github.com:WrathChaos/react-native-library-boilerplate.git",
+  "bugs": "https://github.com/WrathChaos/react-native-animated-radio-button/issues",
+  "main": "./lib/src/RadioButton.js",
+  "repository": "git@github.com:WrathChaos/react-native-animated-radio-button.git",
   "author": "Kuray (FreakyCoder) <kurayogun@gmail.com>",
   "license": "MIT",
   "peerDependencies": {

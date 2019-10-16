@@ -1,6 +1,6 @@
 import React from "react";
 import { View, StatusBar, SafeAreaView } from "react-native";
-import RadioButton from "./lib/src/RadioButton";
+import RadioButton from "react-native-animated-radio-button";
 
 const App = () => {
   return (
