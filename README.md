@@ -82,7 +82,7 @@ The library itself also has a bouncy animation when onPress is triggered.
 ## Future Plans
 
 - [x] ~~LICENSE~~
-- [ ] Left, right, bottom text component as optional
+- [x] ~~Horizontal & Vertical text component as optional~~
 - [ ] Write an article about the lib on Medium
 
 ## Author
