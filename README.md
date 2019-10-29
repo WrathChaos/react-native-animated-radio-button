@@ -10,13 +10,13 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=for-the-badge)](https://github.com/prettier/prettier)
 
-<p align="center">
+<a align="center">
   <img alt="React Native Animated Radio Button"
-        src="assets/Screenshots/example.gif" width="49%" />
+        src="assets/Screenshots/example.gif" width="40%" height="580" />
 
   <img alt="React Native Animated Radio Button"
         src="assets/Screenshots/example.png" width="49%" />
-</p>
+</a>
 
 # Installation
 
