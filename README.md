@@ -1,11 +1,8 @@
 <img alt="React Native Animated Radio Button" src="assets/logo.png" width="1050"/>
 
-
 [![Battle Tested ✅](https://img.shields.io/badge/-Battle--Tested%20%E2%9C%85-03666e?style=for-the-badge)](https://github.com/WrathChaos/react-native-animated-radio-button)
 
-
 [![Fully customizable animated radio button for React Native](https://img.shields.io/badge/-Fully%20customizable%20animated%20radio%20button%20for%20React%20Native-lightgrey?style=for-the-badge)](https://github.com/WrathChaos/react-native-animated-radio-button)
-
 
 [![npm version](https://img.shields.io/npm/v/react-native-animated-radio-button.svg?style=for-the-badge)](https://www.npmjs.com/package/react-native-animated-radio-button)
 [![npm](https://img.shields.io/npm/dt/react-native-animated-radio-button.svg?style=for-the-badge)](https://www.npmjs.com/package/react-native-animated-radio-button)
@@ -59,15 +56,16 @@ You can check the example out 😏
 
 # Configuration - Props
 
-| Property     |   Type   |  Default   | Description                                     |
-| ------------ | :------: | :--------: | ----------------------------------------------- |
-| size         |  number  |     16     | change the size of the radio button             |
-| isSelected   | boolean  |   false    | set the selectable of the radio button          |
-| isBounceable | boolean  |    true    | enable or disable the bounceable effect         |
-| innerColor   |  color   | dodgerblue | change the radio button's inner circle color    |
-| outerColor   |  color   | dodgerblue | change the radio button's outer circle color    |
-| onPress      | function |     ()     | set your own function when onPress is triggered |
-
+| Property                      |   Type   |  Default   | Description                                                                                                                            |
+| ----------------------------- | :------: | :--------: | -------------------------------------------------------------------------------------------------------------------------------------- |
+| size                          |  number  |     16     | change the size of the radio button                                                                                                    |
+| isSelected                    | boolean  |   false    | set the selectable of the radio button                                                                                                 |
+| isBounceable                  | boolean  |    true    | enable or disable the bounceable effect                                                                                                |
+| innerColor                    |  color   | dodgerblue | change the radio button's inner circle color                                                                                           |
+| outerColor                    |  color   | dodgerblue | change the radio button's outer circle color                                                                                           |
+| onPress                       | function |     ()     | set your own function when onPress is triggered                                                                                        |
+| disableBuiltinStateManagement |   bool   |   false    | disable the builtin state management to let your state management for the radio button                                                 |
+| active                        |   bool   |   false    | you can use this prop to set the radio button is active or not, this **ONLY works** when **built-in** state management is **disabled** |
 
 ## Credits
 
@@ -80,7 +78,6 @@ The library itself also has a bouncy animation when onPress is triggered.
 - [x] ~~LICENSE~~
 - [ ] Left, right, bottom text component as optional
 - [ ] Write an article about the lib on Medium
-
 
 ## Author
 
