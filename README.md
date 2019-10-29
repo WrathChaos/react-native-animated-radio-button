@@ -12,7 +12,10 @@
 
 <p align="center">
   <img alt="React Native Animated Radio Button"
-        src="assets/Screenshots/example.gif" />
+        src="assets/Screenshots/example.gif" width="49%" />
+
+  <img alt="React Native Animated Radio Button"
+        src="assets/Screenshots/example.png" width="49%" />
 </p>
 
 # Installation
@@ -56,16 +59,21 @@ You can check the example out 😏
 
 # Configuration - Props
 
-| Property                      |   Type   |  Default   | Description                                                                                                                            |
-| ----------------------------- | :------: | :--------: | -------------------------------------------------------------------------------------------------------------------------------------- |
-| size                          |  number  |     16     | change the size of the radio button                                                                                                    |
-| isSelected                    | boolean  |   false    | set the selectable of the radio button                                                                                                 |
-| isBounceable                  | boolean  |    true    | enable or disable the bounceable effect                                                                                                |
-| innerColor                    |  color   | dodgerblue | change the radio button's inner circle color                                                                                           |
-| outerColor                    |  color   | dodgerblue | change the radio button's outer circle color                                                                                           |
-| onPress                       | function |     ()     | set your own function when onPress is triggered                                                                                        |
-| disableBuiltinStateManagement |   bool   |   false    | disable the builtin state management to let your state management for the radio button                                                 |
-| active                        |   bool   |   false    | you can use this prop to set the radio button is active or not, this **ONLY works** when **built-in** state management is **disabled** |
+| Property                      |   Type   |   Default    | Description                                                                                                                            |
+| ----------------------------- | :------: | :----------: | -------------------------------------------------------------------------------------------------------------------------------------- |
+| size                          |  number  |      16      | change the size of the radio button                                                                                                    |
+| isSelected                    | boolean  |    false     | set the selectable of the radio button                                                                                                 |
+| isBounceable                  | boolean  |     true     | enable or disable the bounceable effect                                                                                                |
+| innerColor                    |  color   |  dodgerblue  | change the radio button's inner circle color                                                                                           |
+| outerColor                    |  color   |  dodgerblue  | change the radio button's outer circle color                                                                                           |
+| onPress                       | function |      ()      | set your own function when onPress is triggered                                                                                        |
+| disableBuiltinStateManagement |   bool   |    false     | disable the builtin state management to let your state management for the radio button                                                 |
+| active                        |   bool   |    false     | you can use this prop to set the radio button is active or not, this **ONLY works** when **built-in** state management is **disabled** |
+| horizontal                    |   bool   |     true     | make the radio button's text horizontal or vertical                                                                                    |
+| fontSize                      |  number  |      16      | change the font size                                                                                                                   |
+| textColor                     |  color   |  innerColor  | change the text's color                                                                                                                |
+| text                          |  string  | Radio Button | set your own text for each radio button                                                                                                |
+| disableText                   |   bool   |    false     | disable the text and only radio button works                                                                                           |
 
 ## Credits
 
