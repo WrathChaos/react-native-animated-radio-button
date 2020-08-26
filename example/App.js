@@ -10,7 +10,7 @@ const App = () => {
         style={{
           flex: 1,
           alignItems: "center",
-          justifyContent: "center"
+          justifyContent: "center",
         }}
       >
         <RadioButton
@@ -30,6 +30,7 @@ const App = () => {
             isBounceable={false}
             animation={"bounceIn"}
             onPress={() => console.log("RadioButton is pressed")}
+            disableText={true}
           />
         </View>
         <View style={{ marginTop: 16 }}>
@@ -41,6 +42,7 @@ const App = () => {
             outerColor="#6a29d9"
             animation={"bounceIn"}
             onPress={() => console.log("RadioButton is pressed")}
+            disableImage={true}
           />
         </View>
       </SafeAreaView>
