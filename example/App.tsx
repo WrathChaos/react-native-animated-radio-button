@@ -1,5 +1,11 @@
 import React from "react";
-import { View, StatusBar, SafeAreaView } from "react-native";
+import {
+  View,
+  StatusBar,
+  ImageBackground,
+  Text,
+  SafeAreaView,
+} from "react-native";
 import RadioButton from "react-native-animated-radio-button";
 
 const App = () => {
@@ -30,7 +36,6 @@ const App = () => {
             isBounceable={false}
             animation={"bounceIn"}
             onPress={() => console.log("RadioButton is pressed")}
-            disableText={true}
           />
         </View>
         <View style={{ marginTop: 16 }}>
@@ -42,7 +47,19 @@ const App = () => {
             outerColor="#6a29d9"
             animation={"bounceIn"}
             onPress={() => console.log("RadioButton is pressed")}
-            disableImage={true}
+            customImageComponent={
+              <ImageBackground
+                source={require("./assets/party.png")}
+                style={{
+                  height: 50,
+                  width: 50,
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <Text>Hello</Text>
+              </ImageBackground>
+            }
           />
         </View>
       </SafeAreaView>
