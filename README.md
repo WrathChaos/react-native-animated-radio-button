@@ -12,8 +12,8 @@
 
 
 <p align="center">
-<img alt="React Native Animated Radio Button" src="assets/Screenshots/example.gif" width="49.7%" height="700" />
-<img alt="React Native Gradient Header" src="assets/Screenshots/example.png" width="49.7%" />
+<img alt="React Native Animated Radio Button" src="assets/Screenshots/example.gif" height="700" />
+<img alt="React Native Gradient Header" src="assets/Screenshots/example.png" height="700" />
 </p>
 
 # Installation
