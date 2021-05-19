@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import * as React from "react";
 import { View, StyleProp, ViewStyle } from "react-native";
 import RNBounceable from "@freakycoder/react-native-bounceable";
 /**
@@ -18,7 +18,10 @@ interface IState {
   isActive: boolean;
 }
 
-export default class RadioButton extends Component<IRadioButtonProps, IState> {
+export default class RadioButton extends React.Component<
+  IRadioButtonProps,
+  IState
+> {
   constructor(props: IRadioButtonProps) {
     super(props);
     this.state = {

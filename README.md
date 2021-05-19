@@ -12,8 +12,13 @@
 
 <p align="center">
 <img alt="React Native Animated Radio Button" src="assets/Screenshots/example.gif" height="700" />
-<img alt="React Native Gradient Header" src="assets/Screenshots/example.png" height="700" />
 </p>
+
+# Version 2 is here 😍
+
+Finally version 2 is here with much basic usage and re-written code.
+It does not support a text but it is easy to add a text depends on the dev
+Typescript support and much cleaner code
 
 # Installation
 
@@ -28,7 +33,7 @@ npm i react-native-animated-radio-button
 ###### IMPORTANT! You need install them
 
 ```js
-"react-native-animatable": ">= 1.3.3"
+"@freakycoder/react-native-bounceable": ">= 0.2.5",
 ```
 
 # Usage
@@ -45,43 +50,25 @@ You can check the example out 😏
 
 ```jsx
 <RadioButton
-  size={50}
-  isSelected
-  animation={"bounceIn"}
-  onPress={() => console.log("RadioButton is pressed")}
+  onPress={(isActive: boolean) =>
+    console.log("RadioButton isActive: ", isActive)
+  }
 />
 ```
 
 # Configuration - Props
 
-| Property                      |   Type    |   Default    | Description                                                                                                                            |
-| ----------------------------- | :-------: | :----------: | -------------------------------------------------------------------------------------------------------------------------------------- |
-| size                          |  number   |      16      | change the size of the radio button                                                                                                    |
-| isSelected                    |  boolean  |    false     | set the selectable of the radio button                                                                                                 |
-| isBounceable                  |  boolean  |     true     | enable or disable the bounceable effect                                                                                                |
-| innerColor                    |   color   |  dodgerblue  | change the radio button's inner circle color                                                                                           |
-| outerColor                    |   color   |  dodgerblue  | change the radio button's outer circle color                                                                                           |
-| onPress                       | function  |      ()      | set your own function when onPress is triggered                                                                                        |
-| disableBuiltinStateManagement |   bool    |    false     | disable the builtin state management to let your state management for the radio button                                                 |
-| active                        |   bool    |    false     | you can use this prop to set the radio button is active or not, this **ONLY works** when **built-in** state management is **disabled** |
-| horizontal                    |   bool    |     true     | make the radio button's text horizontal or vertical                                                                                    |
-| fontSize                      |  number   |      16      | change the font size                                                                                                                   |
-| textColor                     |   color   |  innerColor  | change the text's color                                                                                                                |
-| text                          |  string   | Radio Button | set your own text for each radio button                                                                                                |
-| disableText                   |   bool    |    false     | disable the text and only radio button works                                                                                           |
-| customImageComponent          | component |   default    | set your own custom component instead of default Image one                                                                             |
-
-## Credits
-
-This library is heavily inspired on **[react-native-radio-button](https://github.com/mmazzarolo/react-native-radio-button)**
-It is re-written with a modern way. Also it has **built-in selection system**.
-The library itself also has a bouncy animation when onPress is triggered.
+| Property       |   Type   | Default | Description                                     |
+| -------------- | :------: | :-----: | ----------------------------------------------- |
+| style          |  style   | default | set the main container's style (outer circle)   |
+| innerContainer |  style   | default | set the inner container's style (inner circle)  |
+| onPress        | function | default | set your own function when onPress is triggered |
 
 ## Future Plans
 
 - [x] ~~LICENSE~~
 - [x] ~~Horizontal & Vertical text component as optional~~
-- [ ] Typescript Challenge!
+- [x] ~~Typescript Challenge!~~
 - [ ] Write an article about the lib on Medium
 
 ## Author

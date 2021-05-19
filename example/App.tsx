@@ -8,7 +8,7 @@ import {
   useColorScheme,
   View,
 } from "react-native";
-import RadioButton from "./lib/RadioButton";
+import RadioButton from "./build/dist/RadioButton";
 
 const App = () => {
   const isDarkMode = useColorScheme() === "dark";
