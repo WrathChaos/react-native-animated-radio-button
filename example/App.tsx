@@ -14,11 +14,26 @@ const App = () => {
         onPress={(isActive: boolean) => console.log("isActive: ", isActive)}
       />
       <RadioButton
-        style={{ borderColor: "#019310" }}
-        innerContainer={{ backgroundColor: "#019310" }}
+        style={{
+          marginTop: 32,
+          height: 70,
+          width: 70,
+          borderRadius: 35,
+          borderColor: "#019310",
+        }}
+        innerBackgroundColor="#019310"
+        innerContainerStyle={{ height: 50, width: 50, borderRadius: 25 }}
         onPress={(isActive: boolean) => console.log("isActive: ", isActive)}
       />
       <RadioButton
+        style={{
+          marginTop: 32,
+          borderRadius: 16,
+          borderWidth: 3,
+          borderColor: "#328da8",
+        }}
+        innerBackgroundColor="#328da8"
+        innerContainerStyle={{ height: 50, width: 50, borderRadius: 10 }}
         onPress={(isActive: boolean) => console.log("isActive: ", isActive)}
       />
     </SafeAreaView>
