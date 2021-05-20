@@ -1,14 +1,6 @@
 import React from "react";
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from "react-native";
-import RadioButton from "./build/dist/RadioButton";
+import { StatusBar, SafeAreaView, useColorScheme } from "react-native";
+import RadioButton from "react-native-animated-radio-button";
 
 const App = () => {
   const isDarkMode = useColorScheme() === "dark";
@@ -24,7 +16,5 @@ const App = () => {
     </SafeAreaView>
   );
 };
-
-const styles = StyleSheet.create({});
 
 export default App;
