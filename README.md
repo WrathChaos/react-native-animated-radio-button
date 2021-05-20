@@ -58,11 +58,12 @@ You can check the example out 😏
 
 # Configuration - Props
 
-| Property       |   Type   | Default | Description                                     |
-| -------------- | :------: | :-----: | ----------------------------------------------- |
-| style          |  style   | default | set the main container's style (outer circle)   |
-| innerContainer |  style   | default | set the inner container's style (inner circle)  |
-| onPress        | function | default | set your own function when onPress is triggered |
+| Property             |   Type   | Default | Description                                     |
+| -------------------- | :------: | :-----: | ----------------------------------------------- |
+| style                |  style   | default | set the main container's style (outer circle)   |
+| innerContainerStyle  |  style   | default | set the inner container's style (inner circle)  |
+| innerBackgroundColor |  color   |   red   | change the inner circle's background color      |
+| onPress              | function | default | set your own function when onPress is triggered |
 
 ## Future Plans
 

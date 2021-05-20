@@ -4,11 +4,14 @@ interface Style {
   container: ViewStyle;
 }
 
-export const _innerStyle = (isActive: boolean): ViewStyle => ({
+export const _innerStyle = (
+  isActive: boolean,
+  innerBackgroundColor: string,
+): ViewStyle => ({
   width: 30,
   height: 30,
   borderRadius: 25,
-  backgroundColor: isActive ? "red" : "transparent",
+  backgroundColor: isActive ? innerBackgroundColor : "transparent",
 });
 
 export default StyleSheet.create<Style>({

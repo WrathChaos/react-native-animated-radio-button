@@ -10,7 +10,8 @@ type CustomStyleProp = StyleProp<ViewStyle> | Array<StyleProp<ViewStyle>>;
 
 interface IRadioButtonProps {
   style?: CustomStyleProp;
-  innerContainer?: CustomStyleProp;
+  innerContainerStyle?: CustomStyleProp;
+  innerBackgroundColor?: string;
   onPress: (isActive: boolean) => void;
 }
 
@@ -36,13 +37,22 @@ export default class RadioButton extends React.Component<
   };
 
   render() {
-    const { style, innerContainer } = this.props;
+    const {
+      style,
+      innerContainerStyle,
+      innerBackgroundColor = "red",
+    } = this.props;
     return (
       <RNBounceable
         style={[styles.container, style]}
         onPress={this.handlePress}
       >
-        <View style={[_innerStyle(this.state.isActive), innerContainer]} />
+        <View
+          style={[
+            _innerStyle(this.state.isActive, innerBackgroundColor),
+            innerContainerStyle,
+          ]}
+        />
       </RNBounceable>
     );
   }

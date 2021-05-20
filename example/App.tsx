@@ -13,6 +13,14 @@ const App = () => {
       <RadioButton
         onPress={(isActive: boolean) => console.log("isActive: ", isActive)}
       />
+      <RadioButton
+        style={{ borderColor: "#019310" }}
+        innerContainer={{ backgroundColor: "#019310" }}
+        onPress={(isActive: boolean) => console.log("isActive: ", isActive)}
+      />
+      <RadioButton
+        onPress={(isActive: boolean) => console.log("isActive: ", isActive)}
+      />
     </SafeAreaView>
   );
 };
