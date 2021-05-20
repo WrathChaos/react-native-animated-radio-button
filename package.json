@@ -1,6 +1,6 @@
 {
   "name": "react-native-animated-radio-button",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Fully customizable animated radio button for React Native",
   "keywords": [
     "bouncy",
@@ -22,7 +22,7 @@
   ],
   "homepage": "https://www.freakycoder.com",
   "bugs": "https://github.com/WrathChaos/react-native-animated-radio-button/issues",
-  "main": "./lib/src/RadioButton.js",
+  "main": "./build/dist/RadioButton.js",
   "repository": "git@github.com:WrathChaos/react-native-animated-radio-button.git",
   "author": "Kuray (FreakyCoder) <kurayogun@gmail.com>",
   "license": "MIT",
