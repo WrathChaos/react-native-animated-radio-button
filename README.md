@@ -16,7 +16,7 @@
 
 # Version 2 is here 😍
 
-Finally version 2 is here with much basic usage and re-written code.
+Finally, version 2 is here with much basic usage and re-written code.
 It does not support a text but it is easy to add a text depends on the dev
 Typescript support and much cleaner code
 
