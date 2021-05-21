@@ -79,6 +79,7 @@ You can check the example out 😏
 | style                |  style   | default | set the main container's style (outer circle)   |
 | innerContainerStyle  |  style   | default | set the inner container's style (inner circle)  |
 | innerBackgroundColor |  color   |   red   | change the inner circle's background color      |
+| isActive             | boolean  |  false  | set the initial activation of the radio button  |
 | onPress              | function | default | set your own function when onPress is triggered |
 
 ## Future Plans

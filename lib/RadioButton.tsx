@@ -11,6 +11,7 @@ type CustomStyleProp = StyleProp<ViewStyle> | Array<StyleProp<ViewStyle>>;
 export interface IRadioButtonProps {
   style?: CustomStyleProp;
   innerContainerStyle?: CustomStyleProp;
+  isActive?: boolean;
   innerBackgroundColor?: string;
   onPress: (isActive: boolean) => void;
 }
@@ -26,7 +27,7 @@ export default class RadioButton extends React.Component<
   constructor(props: IRadioButtonProps) {
     super(props);
     this.state = {
-      isActive: false,
+      isActive: props.isActive || false,
     };
   }
 
