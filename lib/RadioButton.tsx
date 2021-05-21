@@ -8,7 +8,7 @@ import styles, { _innerStyle } from "./RadioButton.style";
 
 type CustomStyleProp = StyleProp<ViewStyle> | Array<StyleProp<ViewStyle>>;
 
-interface IRadioButtonProps {
+export interface IRadioButtonProps {
   style?: CustomStyleProp;
   innerContainerStyle?: CustomStyleProp;
   innerBackgroundColor?: string;
