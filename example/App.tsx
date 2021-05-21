@@ -15,9 +15,9 @@ const App = () => {
       />
       <RadioButton
         style={{
-          marginTop: 32,
-          height: 70,
           width: 70,
+          height: 70,
+          marginTop: 32,
           borderRadius: 35,
           borderColor: "#019310",
         }}
@@ -33,7 +33,7 @@ const App = () => {
           borderColor: "#328da8",
         }}
         innerBackgroundColor="#328da8"
-        innerContainerStyle={{ height: 50, width: 50, borderRadius: 10 }}
+        innerContainerStyle={{ height: 35, width: 35, borderRadius: 10 }}
         onPress={(isActive: boolean) => console.log("isActive: ", isActive)}
       />
     </SafeAreaView>

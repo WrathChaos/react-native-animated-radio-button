@@ -11,7 +11,7 @@
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=for-the-badge)](https://github.com/prettier/prettier)
 
 <p align="center">
-<img alt="React Native Animated Radio Button" src="assets/Screenshots/example.gif" height="700" />
+<img alt="React Native Animated Radio Button" src="assets/Screenshots/react-native-animated-radio-button.gif" />
 </p>
 
 # Version 2 is here 😍
@@ -44,7 +44,7 @@ npm i react-native-animated-radio-button
 import RadioButton from "react-native-animated-radio-button";
 ```
 
-## Fundamental Usage
+## Basic Usage
 
 You can check the example out 😏
 
@@ -53,6 +53,22 @@ You can check the example out 😏
   onPress={(isActive: boolean) =>
     console.log("RadioButton isActive: ", isActive)
   }
+/>
+```
+
+## Customization Usage
+
+```jsx
+<RadioButton
+  style={{
+    marginTop: 32,
+    borderRadius: 16,
+    borderWidth: 3,
+    borderColor: "#328da8",
+  }}
+  innerBackgroundColor="#328da8"
+  innerContainerStyle={{ height: 35, width: 35, borderRadius: 10 }}
+  onPress={(isActive: boolean) => console.log("isActive: ", isActive)}
 />
 ```
 
@@ -79,3 +95,7 @@ FreakyCoder, kurayogun@gmail.com
 ## License
 
 React Native Animated Radio Button is available under the MIT license. See the LICENSE file for more info.
+
+```
+
+```
