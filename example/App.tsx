@@ -1,6 +1,7 @@
 import React from "react";
 import { StatusBar, SafeAreaView, useColorScheme } from "react-native";
-import RadioButton from "react-native-animated-radio-button";
+// import RadioButton from "react-native-animated-radio-button";
+import RadioButton from "./lib/RadioButton";
 
 const App = () => {
   const isDarkMode = useColorScheme() === "dark";
@@ -32,6 +33,7 @@ const App = () => {
           borderWidth: 3,
           borderColor: "#328da8",
         }}
+        isActive={false}
         innerBackgroundColor="#328da8"
         innerContainerStyle={{ height: 35, width: 35, borderRadius: 10 }}
         onPress={(isActive: boolean) => console.log("isActive: ", isActive)}

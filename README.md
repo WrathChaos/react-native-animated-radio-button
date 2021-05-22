@@ -74,13 +74,14 @@ You can check the example out 😏
 
 # Configuration - Props
 
-| Property             |   Type   | Default | Description                                     |
-| -------------------- | :------: | :-----: | ----------------------------------------------- |
-| style                |  style   | default | set the main container's style (outer circle)   |
-| innerContainerStyle  |  style   | default | set the inner container's style (inner circle)  |
-| innerBackgroundColor |  color   |   red   | change the inner circle's background color      |
-| isActive             | boolean  |  false  | set the initial activation of the radio button  |
-| onPress              | function | default | set your own function when onPress is triggered |
+| Property             |   Type   |  Default  | Description                                        |
+| -------------------- | :------: | :-------: | -------------------------------------------------- |
+| style                |  style   |  default  | set the main container's style (outer circle)      |
+| innerContainerStyle  |  style   |  default  | set the inner container's style (inner circle)     |
+| innerBackgroundColor |  color   |    red    | change the inner circle's background color         |
+| initial              | boolean  | undefined | set the initial activation of the radio button     |
+| isActive             | boolean  | undefined | this will disable the built-in state of activation |
+| onPress              | function |  default  | set your own function when onPress is triggered    |
 
 ## Future Plans
 
