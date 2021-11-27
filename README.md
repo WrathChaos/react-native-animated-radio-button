@@ -11,7 +11,7 @@
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=for-the-badge)](https://github.com/prettier/prettier)
 
 <p align="center">
-<img alt="React Native Animated Radio Button" src="assets/Screenshots/react-native-animated-radio-button.gif" />
+<img alt="React Native Animated Radio Button" src="assets/Screenshots/react-native-animated-radio-button.gif" height="850" />
 </p>
 
 # Version 2 is here 😍
