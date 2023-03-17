@@ -40,7 +40,7 @@
     "@types/react": "^18.0.0",
     "@types/react-native": "^0.71.0",
     "react-native-typescript-transformer": "^1.2.13",
-    "typescript": "^4.0.3",
+    "typescript": "^5.0.2",
     "@react-native-community/eslint-config": "^3.0.0",
     "eslint": "^7.11.0",
     "eslint-config-airbnb": "^19.0.0",
