@@ -37,7 +37,7 @@
     "@freakycoder/react-native-bounceable": ">= 0.2.5"
   },
   "devDependencies": {
-    "@types/react": "^18.0.0",
+    "@types/react": "^19.0.2",
     "@types/react-native": "^0.72.0",
     "react-native-typescript-transformer": "^1.2.13",
     "typescript": "^5.0.2",
