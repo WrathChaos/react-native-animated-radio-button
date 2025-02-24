@@ -42,7 +42,7 @@
     "react-native-typescript-transformer": "^1.2.13",
     "typescript": "^5.0.2",
     "@react-native-community/eslint-config": "^3.0.0",
-    "eslint": "^7.11.0",
+    "eslint": "^9.21.0",
     "eslint-config-airbnb": "^19.0.0",
     "husky": "^9.0.1",
     "lint-staged": "^15.0.1",
